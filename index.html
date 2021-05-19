@@ -150,7 +150,7 @@
 							<h2>Contact me directly</h2>
 							<p>I would love to hear from you</p>
 						</header>
-						<div id="contact-button" class="col-4 col-12-xsmall"><input type="submit" value="Send A Form" class="button primary" onclick="ShowAndHide()" /></div>
+						<div onclick="pop()" id="contact-button" class="col-4 col-12-xsmall"><input type="submit" value="Send A Form" class="button primary" onclick="ShowAndHide()" /></div>
 						<section id="form" style="display: none ;">
 							<form method="post" action="#">
 								<div class="row gtr-uniform gtr-50">
@@ -178,7 +178,7 @@
 										<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
 									</div>
 									<div class="col-12">
-										<ul class="actions" action=”mailto:contact@yourdomain.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+										<ul class="actions" action=”mailto:jiangdl0129@gmail.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
 											<li><input type="submit" value="Send Message" class="primary" /></li>
 											<li><input type="reset" value="Reset" /></li>
 										</ul>
@@ -192,12 +192,10 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=100005276102882" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="linkedin.com/in/danlin-jiang-565840187" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Darleenie" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:jiangdl0129@gmail.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a>HTML5 UP</a></li>
@@ -226,7 +224,11 @@
 						x.style.display = 'none';
 					}
 				}
-				</SCRIPT>
+				function pop() {
+					// var x = document.getElementById('form');
+					window.alert("This form is currently not available. \nPlease email to jiangdl0129@gmail.com")
+				}
+			</SCRIPT>
 
 	</body>
 </html>
